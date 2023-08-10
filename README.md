@@ -13,24 +13,36 @@ npx cap sync
 
 <docgen-index>
 
-* [`echo(...)`](#echo)
+* [`addToWallet(...)`](#addtowallet)
+* [`isWalletAppAvailable()`](#iswalletappavailable)
 
 </docgen-index>
 
 <docgen-api>
 <!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
 
-### echo(...)
+### addToWallet(...)
 
 ```typescript
-echo(options: { value: string; }) => Promise<{ value: string; }>
+addToWallet(options: { base64: string; }) => Promise<{ message: string; }>
 ```
 
-| Param         | Type                            |
-| ------------- | ------------------------------- |
-| **`options`** | <code>{ value: string; }</code> |
+| Param         | Type                             |
+| ------------- | -------------------------------- |
+| **`options`** | <code>{ base64: string; }</code> |
 
-**Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
+**Returns:** <code>Promise&lt;{ message: string; }&gt;</code>
+
+--------------------
+
+
+### isWalletAppAvailable()
+
+```typescript
+isWalletAppAvailable() => Promise<{ message: string; }>
+```
+
+**Returns:** <code>Promise&lt;{ message: string; }&gt;</code>
 
 --------------------
 

@@ -12,11 +12,17 @@ public class CapacitorApplePasskitPlugin extends Plugin {
     private CapacitorApplePasskit implementation = new CapacitorApplePasskit();
 
     @PluginMethod
-    public void echo(PluginCall call) {
-        String value = call.getString("value");
-
+    public void addToWallet(PluginCall call) {
+        String value = call.getString("base64");
         JSObject ret = new JSObject();
-        ret.put("value", implementation.echo(value));
+        ret.put("base64", implementation.addToWallet("Method not implemented on android."));
+        call.resolve(ret);
+    }
+
+    @PluginMethod
+    public void isWalletAppAvailable(PluginCall call) {
+        JSObject ret = new JSObject();
+        ret.put("", implementation.isWalletAppAvailable("Method not implemented on android."));
         call.resolve(ret);
     }
 }

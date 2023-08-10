@@ -17,10 +17,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lucasdgordilloid90/capacitor-apple-passkit.git.git"
+    "url": "git+https://github.com/id90t/capacitor-apple-passkit.git"
   },
   "bugs": {
-    "url": "https://github.com/lucasdgordilloid90/capacitor-apple-passkit.git/issues"
+    "url": "https://github.com/id90t/capacitor-apple-passkit.git/issues"
   },
   "keywords": [
     "capacitor",

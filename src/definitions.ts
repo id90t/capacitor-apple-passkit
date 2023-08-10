@@ -1,3 +1,4 @@
 export interface CapacitorApplePasskitPlugin {
-  echo(options: { value: string }): Promise<{ value: string }>;
+  addToWallet(options: { base64: string }): Promise<{ message: string }>;
+  isWalletAppAvailable(): Promise<{ message: string }>;
 }

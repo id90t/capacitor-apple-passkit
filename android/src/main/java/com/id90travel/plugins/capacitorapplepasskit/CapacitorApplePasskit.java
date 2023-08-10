@@ -4,8 +4,13 @@ import android.util.Log;
 
 public class CapacitorApplePasskit {
 
-    public String echo(String value) {
-        Log.i("Echo", value);
+    public String addToWallet(String value) {
+        Log.i("Not implememted on Android", value);
+        return value;
+    }
+
+    public String isWalletAppAvailable(String value) {
+        Log.i("Not implememted on Android", value);
         return value;
     }
 }

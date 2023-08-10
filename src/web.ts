@@ -6,8 +6,12 @@ export class CapacitorApplePasskitWeb
   extends WebPlugin
   implements CapacitorApplePasskitPlugin
 {
-  async echo(options: { value: string }): Promise<{ value: string }> {
-    console.log('ECHO', options);
-    return options;
+  addToWallet(options: { base64: string }): Promise<{ message: string; }> {
+    console.log(options.base64, 'Method not implemente on web.');
+    throw new Error('Method not implemented on web.');
+  }
+  isWalletAppAvailable(): Promise<{ message: string; }> {
+    console.log('Method not implemente on web.');
+    throw new Error('Method not implemented on web.');
   }
 }
