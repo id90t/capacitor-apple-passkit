@@ -7,6 +7,11 @@ Plugin that allows access to Apple PassKit functions.
 Capacitor 5 -> Version 0.0.1
 Capacitor 6 -> Version 0.0.3
 
+| Capacitor Version         | Plugin Version                             |
+| ------------- | -------------------------------- |
+| Capacitor 5 | 0.0.1 |
+| Capacitor 6 | 0.0.3 |
+
 ## Install
 
 ```bash
